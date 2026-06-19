@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Olivier Marceau Photography</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header" id="top">
+    <a class="brand" href="index.html" aria-label="Начало">
+      <span>OLIVIER MARCEAU</span>
+      <small>PHOTOGRAPHY</small>
+    </a>
+
+    <button class="nav-toggle" aria-label="Отвори меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Основна навигация">
+      <a href="index.html">Home</a>
+      <a class="active" href="portfolio.html">Portfolio</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="journal.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="#contact">Book a session</a>
+  </header>
+
+  <main>
+    <section class="portfolio-hero" aria-label="Portfolio hero">
+      <div class="portfolio-hero-bg"></div>
+      <div class="portfolio-hero-overlay"></div>
+
+      <div class="portfolio-hero-content">
+        <h1>Portfolio</h1>
+        <p>Timeless stories. Artfully captured.</p>
+      </div>
+    </section>
+
+    <section class="portfolio-page">
+      <nav class="portfolio-filter" aria-label="Portfolio categories">
+        <a class="active" href="#" data-filter="all">All Work</a>
+        <a href="#" data-filter="weddings">Weddings</a>
+        <a href="#" data-filter="portraits">Portraits</a>
+        <a href="#" data-filter="events">Events</a>
+        <a href="#" data-filter="destinations">Destinations</a>
+        <a href="#" data-filter="editorial">Editorial</a>
+      </nav>
+
+      <section class="portfolio-masonry" aria-label="Portfolio gallery">
+        <article class="portfolio-item item-portrait-bw" data-category="portraits">
+          <img src="assets/portrait.jpg" alt="Black and white bridal portrait">
+        </article>
+
+        <article class="portfolio-item item-destination" data-category="destinations">
+          <img src="assets/mountains.jpg" alt="Mountain destination photography">
+        </article>
+
+        <article class="portfolio-item item-bride-large" data-category="weddings">
+          <img src="assets/wedding-1.jpg" alt="Bride holding wedding bouquet">
+        </article>
+
+        <article class="portfolio-item item-groom-bw" data-category="editorial">
+          <img src="assets/portrait-1.jpg" alt="Editorial groom portrait">
+        </article>
+
+        <article class="portfolio-item item-table" data-category="events">
+          <img src="assets/events.jpg" alt="Elegant wedding reception table">
+        </article>
+
+        <article class="portfolio-item item-lake" data-category="destinations">
+          <img src="assets/destinations-1.jpg" alt="Mountain lake destination">
+        </article>
+
+        <article class="portfolio-item item-photographer" data-category="portraits">
+          <img src="assets/portrait-1.jpg" alt="Photographer portrait">
+        </article>
+
+        <article class="portfolio-item item-villa" data-category="destinations">
+          <img src="assets/destinations.jpg" alt="Luxury destination venue">
+        </article>
+
+        <article class="portfolio-item item-car-bw" data-category="weddings">
+          <img src="assets/wedding.jpg" alt="Black and white wedding couple">
+        </article>
+
+        <article class="portfolio-item item-couple-sunset" data-category="weddings">
+          <img src="assets/wedding.jpg" alt="Wedding couple at sunset">
+        </article>
+      </section>
+
+      <section class="featured-stories">
+        <div class="section-title-wrap">
+          <h2>Featured Stories</h2>
+        </div>
+
+        <div class="story-grid">
+          <article class="story-card story-card-image">
+            <img src="assets/wedding.jpg" alt="Lake Como wedding">
+          </article>
+
+          <article class="story-card story-card-text">
+            <p class="story-kicker">Lake Como Wedding</p>
+            <p>A timeless celebration on the shores of Lake Como, where elegance meets breathtaking beauty.</p>
+            <a href="lakecomo.html">View story <span>→</span></a>
+          </article>
+
+          <article class="story-card story-card-image">
+            <img src="assets/wedding-1.jpg" alt="Paris elopement">
+          </article>
+
+          <article class="story-card story-card-text">
+            <p class="story-kicker">Paris Elopement</p>
+            <p>An intimate elopement in the heart of Paris, captured with emotion and editorial grace.</p>
+            <a href="paris.html">View story <span>→</span></a>
+          </article>
+
+          <article class="story-card story-card-image">
+            <img src="assets/mountains.jpg" alt="Amalfi Coast destination wedding">
+          </article>
+
+          <article class="story-card story-card-text">
+            <p class="story-kicker">Amalfi Coast Destination Wedding</p>
+            <p>An unforgettable weekend under the Italian sun, surrounded by family and la dolce vita.</p>
+            <a href="amalfi.html">View story <span>→</span></a>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <section class="portfolio-cta" id="contact">
+      <div>
+        <p class="micro-title">Let’s create something beautiful</p>
+        <p>Every story is unique. I’d love to hear about yours and create timeless images you’ll treasure forever.</p>
+      </div>
+
+      <a class="btn btn-outline" href="mailto:hello@oliviermarceau.com">Inquire or book a session</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© 2024 Olivier Marceau Photography. All rights reserved.</span>
+
+    <nav aria-label="Футър навигация">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms &amp; Conditions</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
